@@ -1,0 +1,56 @@
+//emotion
+void setup() {
+  size(1000, 1000);
+  background(300);
+  frameRate(100);
+}
+void draw(){
+  pushMatrix();
+  fill(255, 187, 219, 30);
+  rectMode(CENTER);
+  translate(width/2, height/2);
+  rotate(frameCount/1);
+  float r=random(50);
+  rect(0, 0, 200+r, 200+frameCount%50);
+  popMatrix();
+  
+    pushMatrix();
+  fill(255, 107, 218, 20);
+  rectMode(CENTER);
+  translate(width/2, height/2);
+  rotate(radians(frameCount/2));
+  rect(0, 0, 300+frameCount%70, 300+frameCount%70);
+  popMatrix();
+  
+    pushMatrix();
+  fill(240, 173, 219, 20);
+  rectMode(CENTER);
+  translate(width/2, height/2);
+  rotate(radians(frameCount/3));
+  rect(0, 0, 400+frameCount%75, 400+frameCount%75);
+  popMatrix();
+  
+    pushMatrix();
+  fill(209, 178, 234, 20);
+  rectMode(CENTER);
+  translate(width/2, height/2);
+  rotate(radians(frameCount/4));
+  rect(0, 0, 500+frameCount%70, 500+frameCount%70);
+  popMatrix();
+  
+  pushMatrix();
+  fill(168, 204, 232, 20);
+  rectMode(CENTER);
+  translate(width/2, height/2);
+  rotate(radians(frameCount/5));
+  rect(0, 0, 600+frameCount%75, 600+frameCount%75);
+  popMatrix();
+  
+   pushMatrix();
+  fill(164, 231, 223, 10);
+  rectMode(CENTER);
+  translate(width/2, height/2);
+  rotate(radians(frameCount/6));
+  rect(0, 0, 700+frameCount%80, 700+frameCount%80);
+  popMatrix();
+  
